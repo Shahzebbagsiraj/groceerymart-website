@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Grocery Market</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#vegetables">Vegetables</a></li>
+            <li><a href="#grains">Grains</a></li>
+            <li><a href="#billing">Billing</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <section>
+            <h2>About Our Grocery Market</h2>
+            <p>At Grocery Market, we bring you the freshest produce and high-quality groceries at competitive prices.
+                Our store is dedicated to providing a wide variety of fruits, vegetables, and grains to meet your daily
+                needs. Our commitment to quality and customer satisfaction sets us apart, and we take pride in offering
+                exceptional service and a pleasant shopping experience.</p>
+        </section>
+
+        <section id="fruits">
+            <h2>Fruits</h2>
+            <div class="product-grid">
+                <!-- Example fruit card -->
+                <div class="product-card">
+                    <img src="./images/apples.gif" alt="Apple" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Apple</h3>
+                        <p class="product-details">Crisp and juicy apples, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('apple', -1)">-</button>
+                            <input type="text" id="apple-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('apple', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Apple', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/avacado.png" alt="Avacado" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Avacado</h3>
+                        <p class="product-details">Crisp and juicy avacados, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('avacado', -1)">-</button>
+                            <input type="text" id="avacado-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('avacado', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Avacado', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./images/banana.gif" alt="Banana" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Banana</h3>
+                        <p class="product-details">Crisp and juicy bananas, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('banana', -1)">-</button>
+                            <input type="text" id="banana-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('banana', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Banana', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/cherry.gif" alt="Cherry" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Cherry</h3>
+                        <p class="product-details">Crisp and juicy cherries, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('cherry', -1)">-</button>
+                            <input type="text" id="cherry-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('cherry', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Cherry', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/guava.gif" alt="Guava" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Guava</h3>
+                        <p class="product-details">Crisp and juicy guavas, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('guava', -1)">-</button>
+                            <input type="text" id="guava-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('guava', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Guava', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/kiwi.gif" alt="Kiwi" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Kiwi</h3>
+                        <p class="product-details">Crisp and juicy kiwis, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('kiwi', -1)">-</button>
+                            <input type="text" id="kiwi-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('kiwi', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Kiwi', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/mango.gif" alt="Mango" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Mango</h3>
+                        <p class="product-details">Crisp and juicy mangos, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('mango', -1)">-</button>
+                            <input type="text" id="mango-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('Mango', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Apple', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/olive-branch.gif" alt="Olive" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Olive</h3>
+                        <p class="product-details">Crisp and juicy olives, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('olive', -1)">-</button>
+                            <input type="text" id="olive-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('olive', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Olive', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/orange.gif" alt="Orange" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Orange</h3>
+                        <p class="product-details">Crisp and juicy Oranges, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('orange', -1)">-</button>
+                            <input type="text" id="orange-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('orange', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Orange', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/pear.gif" alt="Pear" width="300" height="250">
+                    <div class="product-info">
+                        <h3>pear</h3>
+                        <p class="product-details">Crisp and juicy pears, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('pear', -1)">-</button>
+                            <input type="text" id="pear-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('pear', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Pear', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/pineapple.png" alt="Pineapple" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Pineapple</h3>
+                        <p class="product-details">Crisp and juicy pineapples , rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('pineapple', -1)">-</button>
+                            <input type="text" id="pineapple-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('pineapple', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Pineapple', 1)">><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/strawberry.gif" alt="Strawberry" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Strawberry</h3>
+                        <p class="product-details">Crisp and juicy Strawberries , rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('strawberry', -1)">-</button>
+                            <input type="text" id="strawberry-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('strawberry', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Strawberry', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="./images/grape.gif" alt="Grapes" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Grapes</h3>
+                        <p class="product-details">Crisp and juicy Grapes, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('grapes', -1)">-</button>
+                            <input type="text" id="grapes-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('grapes', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Grapes', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="./images/berries.gif" alt="Berries" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Berries</h3>
+                        <p class="product-details">Crisp and juicy Berries , rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('berries', -1)">-</button>
+                            <input type="text" id="berries-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('berries', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Berries', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="./images/fig.gif" alt="Fig" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Fig</h3>
+                        <p class="product-details">Crisp and juicy Figs, rich in vitamins and antioxidants.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('fig', -1)">-</button>
+                            <input type="text" id="fig-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('fig', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Fig', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+                <!-- Add more fruit cards here -->
+            </div>
+        </section>
+
+        <section id="vegetables">
+            <h2>Vegetables</h2>
+            <div class="product-grid">
+                <!-- Example vegetable card -->
+                <div class="product-card">
+                    <img src="./images/carrot.gif" alt="Carrot" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Carrot</h3>
+                        <p class="product-details">Fresh carrots packed with essential nutrients.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('carrot', -1)">-</button>
+                            <input type="text" id="carrot-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('carrot', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Carrot', 1)">><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/cabbage.gif" alt="Cabbage" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Cabbage</h3>
+                        <p class="product-details">Fresh cabbages packed with essential nutrients.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('cabbage', -1)">-</button>
+                            <input type="text" id="cabbage-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('cabbage', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Cabbage', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/potato.gif" alt="Potato" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Potato</h3>
+                        <p class="product-details">Fresh Potatos packed with essential nutrients.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('potato', -1)">-</button>
+                            <input type="text" id="potato-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('potato', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Potato', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/onion.gif" alt="Onion" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Onion</h3>
+                        <p class="product-details">Fresh onion packed with essential nutrients.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('onion', -1)">-</button>
+                            <input type="text" id="onion-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('onion', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Onion', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/tomato.gif" alt="Tomato" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Tomato</h3>
+                        <p class="product-details">Fresh Tomatos packed with essential nutrients.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('tomato', -1)">-</button>
+                            <input type="text" id="tomato-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('tomato', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Tomato', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+                <!-- Add more vegetable cards here -->
+            </div>
+        </section>
+
+        <section id="grains">
+            <h2>Grains</h2>
+            <div class="product-grid">
+                <!-- Example grain card -->
+                <div class="product-card">
+                    <img src="./images/rice.gif" alt="Rice" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Rice</h3>
+                        <p class="product-details">High-quality rice for your everyday meals.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('rice', -1)">-</button>
+                            <input type="text" id="rice-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('rice', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Rice', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/wheat.gif" alt="Wheat" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Wheat</h3>
+                        <p class="product-details">High-quality wheat grains for your everyday meals.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('wheat', -1)">-</button>
+                            <input type="text" id="wheat-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('wheat', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Wheat', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/beans.gif" alt="Beans" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Beans</h3>
+                        <p class="product-details">High-quality beans for your everyday meals.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('beans', -1)">-</button>
+                            <input type="text" id="beans-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('beans', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Beans', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/corn.gif" alt="Corn" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Corn</h3>
+                        <p class="product-details">High-quality Corns for your everyday meals.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('corn', -1)">-</button>
+                            <input type="text" id="corn-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('corn', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Corn', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="./images/barley.png" alt="Barley" width="300" height="250">
+                    <div class="product-info">
+                        <h3>Barley</h3>
+                        <p class="product-details">High-quality rice for your everyday meals.</p>
+                        <div class="quantity-controls">
+                            <button onclick="updateQuantity('barley', -1)">-</button>
+                            <input type="text" id="barley-quantity" value="0" readonly>
+                            <button onclick="updateQuantity('barley', 1)">+</button>
+                        </div>
+                        <p class="product-rating">Rating: ⭐⭐⭐⭐</p>
+                        <button class="add-to-cart" onclick="addToCart('Barley', 1)"><img src="./images/cart.gif"
+                                height="40px" width="40px"></button>
+                    </div>
+                </div>
+                <!-- Add more grain cards here -->
+            </div>
+        </section>
+
+        <section id="billing">
+            <h2>Billing</h2>
+            <div class="billing-section">
+                <h3>Order Summary</h3>
+                <div id="cart-items"></div>
+                <div class="cart-item">
+                    <p>Total Amount:</p>
+                    <p id="total-amount">$0.00</p>
+                </div>
+                <h3>Payment Method</h3>
+                <select id="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash">Cash</option>
+                </select>
+                <button onclick="completeOrder()">Complete Order</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grocery Market</p>
+    </footer>
+
+    <!-- Loading overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Modal for order confirmation -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-message">Order Confirmation</h2>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
