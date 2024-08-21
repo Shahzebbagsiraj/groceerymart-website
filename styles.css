@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom right, #f0f4f7, #d9e7f1);
+    background: linear-gradient(to bottom right, #A9F1DF, #FFDDE1);
     color: #333;
     margin: 0;
     padding: 0;
@@ -15,8 +15,10 @@ header {
 }
 
 nav {
-    background: linear-gradient(to right, #333, #ff6f61);
+    /* background: linear-gradient(to right, #93A5CF, #BFF098, #690979);*/
     padding: 10px;
+    background-image: linear-gradient(to right, #83c1af, #00b9cd, #a0cf83, #bef5a5cf, #83c1af);
+
 }
 
 nav ul {
@@ -34,7 +36,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
