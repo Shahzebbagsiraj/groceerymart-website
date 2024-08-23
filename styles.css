@@ -1,9 +1,11 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom right, #A9F1DF, #FFDDE1);
+
     color: #333;
     margin: 0;
     padding: 0;
+
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
 }
 
 header {
@@ -15,9 +17,10 @@ header {
 }
 
 nav {
-    /* background: linear-gradient(to right, #93A5CF, #BFF098, #690979);*/
+
     padding: 10px;
-    background-image: linear-gradient(to right, #83c1af, #00b9cd, #a0cf83, #bef5a5cf, #83c1af);
+
+    background-color: #ECFFE6;
 
 }
 
@@ -51,6 +54,11 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+}
+
+#home {
+    font-weight: 350;
+
 }
 
 section {
